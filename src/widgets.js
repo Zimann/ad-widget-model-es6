@@ -5,8 +5,6 @@ import  processedParameters from './components/process-src-params';
 require('weakmap-polyfill');
 var weakMap = new WeakMap();
 
-
-
 const generateUniversityWidget = () => {   
 
     class USNGE_widget{
