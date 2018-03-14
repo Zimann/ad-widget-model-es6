@@ -12,8 +12,11 @@ let mix = require('laravel-mix');
  */
 
 mix.js('src/widgets.js', 'dist/')
-	.js('src/university-banner/university-banner.js', 'dist/');
-
+	.js('src/university-banner/university-banner.js', 'dist/')
+	.options({
+		imgLoaderOptions: {enabled: false} 
+	})
+	.setPublicPath('public');
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
